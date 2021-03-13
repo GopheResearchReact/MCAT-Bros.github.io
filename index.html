@@ -41,13 +41,11 @@ frame_1.contentWindow.location.replace('https://script.google.com/macros/s/AKfyc
 		
 		
 		
-//	document.getElementById("formId").contentWindow.document.getElementById("button_id").addEventListener("click", functionToRun, false);
-	
-	//-------------------------------------//
-		window.frames['formId'].document.getElementById('username')
 
-var iframe = document.getElementById('formId');
-iframe.contentWindow.document.getElementById("username").addEventListener('mouseup', Handler);
+    var innerDoc = frame_1.contentDocument || iframe.contentWindow.document
+    console.log(innerDoc)
+innerDoc.getElementById("username").addEventListener('mouseup', Handler);
+
 
 function Handler() {
     alert('works');
