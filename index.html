@@ -45,7 +45,7 @@ frame_1.contentWindow.location.replace('https://script.google.com/macros/s/AKfyc
 	
 	//-------------------------------------//			
 var iframe = document.getElementById('formId');
-iframe.contentDocument.body.getElementById("username").addEventListener('mouseup', Handler);
+iframe.contentWindow.document.getElementById("username").addEventListener('mouseup', Handler);
 
 function Handler() {
     alert('works');
