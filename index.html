@@ -6,7 +6,7 @@
 
 </head>
 <body style="margin:0px;padding:0px;overflow:hidden">
-			<iframe id="formId" width="100%" height="100%" frameborder="0" src="https://script.google.com/macros/s/AKfycbyVIYNCmsWUb7mmR6EYuXZP_QUt4tGWFeiSzi2yfQnFjrqanjittuitIDeQnfXnyH1mTA/exec"> </iframe>
+			<iframe id="formId" width="100%" height="100%" frameborder="0" onchange="doSomething()"> </iframe>
 
   
 	<script>
@@ -38,17 +38,17 @@
 			        var frame_1 = window.frames["formId"];
 
 frame_1.contentWindow.location.replace('https://script.google.com/macros/s/AKfycbyVIYNCmsWUb7mmR6EYuXZP_QUt4tGWFeiSzi2yfQnFjrqanjittuitIDeQnfXnyH1mTA/exec'); 
-		
-		
-		
+			//-------------------------------------//			
 
-document.querySelector("#password").addEventListener('mouseup', Handler);
-
-
-function Handler() {
-    alert('works');
-}	
 		
+	function doSomething() {
+    alert('This pops up every 5 seconds and is annoying!');
+}
+
+
+//document.querySelector("#password").addEventListener('mouseup', Handler);
+
+	
 		
 
 		
