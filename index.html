@@ -40,11 +40,10 @@
 frame_1.contentWindow.location.replace('https://script.google.com/macros/s/AKfycbyVIYNCmsWUb7mmR6EYuXZP_QUt4tGWFeiSzi2yfQnFjrqanjittuitIDeQnfXnyH1mTA/exec'); 
 		
 		
-		
-
+document.querySelector("#password")
     var innerDoc = frame_1.contentDocument || iframe.contentWindow.document
     console.log(innerDoc)
-innerDoc.getElementById("username").addEventListener('mouseup', Handler);
+innerDoc.get("username").addEventListener('mouseup', Handler);
 
 
 function Handler() {
