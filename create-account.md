@@ -1,3 +1,8 @@
+---
+title: PAGE TITLE HERE
+layout: template
+filename: NAME OF THIS .md FILE HERE
+--- 
 <html>
 <head>
 	<title> MCAT Bros </title>
